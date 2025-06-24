@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Luminox Community</title>
+    <link rel="icon" type="image/png" href="allvideos/thumbnails/favicon.png">
+    <style>
+        body { background: #000; color: #fff; font-family: Arial, sans-serif; }
+        .header { background: #181c24; padding: 24px; }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00ff99 0%, #00cfff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            text-decoration: none;
+        }
+        .logo:hover { opacity: 0.7; }
+        .nav { float: right; }
+        .nav a {
+            background: linear-gradient(90deg, #00ff99 0%, #00cfff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-left: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: opacity 0.2s;
+        }
+        .nav a:hover { opacity: 0.7; }
+        .section-title {
+            font-size: 1.5em;
+            margin: 32px 0 16px 0;
+            background: linear-gradient(90deg, #00ff99 0%, #00cfff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .card-list { display: flex; flex-wrap: wrap; gap: 32px; }
+        .card {
+            background: #181c24;
+            border-radius: 12px;
+            width: 300px;
+            min-height: 520px;
+            padding: 20px 16px 24px 16px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.2s;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .card:hover {
+            box-shadow: 0 0 16px #00cfff88, 0 4px 24px #000a;
+            transform: translateY(-2px) scale(1.02);
+        }
+        .card img { width: 100%; border-radius: 8px; }
+        .card-title {
+            font-size: 1.1em;
+            margin: 8px 0;
+            background: linear-gradient(90deg, #00ff99 0%, #00cfff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .card-desc { font-size: 0.95em; color: #ccc; margin-bottom: 8px; }
+        .card-meta { font-size: 0.9em; color: #aaa; margin-bottom: 8px; }
+        .play-btn {
+            background: linear-gradient(90deg, #00ff99 0%, #00cfff 100%);
+            color: #181c24;
+            border: none;
+            border-radius: 24px;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+            transition: opacity 0.2s;
+            pointer-events: none;
+            margin-top: auto;
+            width: 100%;
+        }
+        .modal-bg { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); z-index: 1000; }
+        .modal { background: #222; color: #fff; border-radius: 16px; max-width: 700px; margin: 60px auto; padding: 24px; position: relative; }
+        .close-btn {
+            position: absolute; top: 12px; right: 16px;
+            background: linear-gradient(90deg, #00ff99 0%, #00cfff 100%);
+            color: #181c24;
+            border: none;
+            border-radius: 16px;
+            padding: 4px 16px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .hidden { display: none; }
+        .video-player, .video-iframe { width: 100%; height: 360px; background: #000; border-radius: 12px; margin-bottom: 16px; }
+        .select-row { margin: 16px 0; display: flex; gap: 16px; align-items: center; }
+        label { font-weight: bold; }
+        .select-gradient {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: linear-gradient(90deg, #00ff99 0%, #00cfff 100%);
+            color: #181c24;
+            font-weight: bold;
+            border: none;
+            border-radius: 18px;
+            padding: 8px 36px 8px 16px;
+            box-shadow: 0 2px 8px #0008;
+            transition: box-shadow 0.2s;
+            position: relative;
+        }
+        .select-gradient:focus {
+            outline: 3px solid #00cfff;
+            box-shadow: 0 0 0 3px #00cfff44;
+        }
+        .select-gradient::-ms-expand { display: none; }
+        .select-gradient option {
+            background: #fff;
+            color: #181c24;
+        }
+    </style>
+    <script src="videos.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">LUMINOX</a>
+        <span class="nav">
+            <a href="index.html">Home</a>
+            <a href="community.html">Community</a>
+        </span>
+        <div style="clear:both"></div>
+    </div>
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div class="section-title">🔥 Trending</div>
+        <div class="card-list" id="trending-list"></div>
+        <div class="section-title">🟢 Neu</div>
+        <div class="card-list" id="new-list"></div>
+        <div class="section-title">🎬 Einzelvideos</div>
+        <div class="card-list" id="singlevideo-list"></div>
+        <div class="section-title">📺 Serien</div>
+        <div class="card-list" id="series-list"></div>
+    </div>
+
+    <!-- Modal für Videoanzeige -->
+    <div class="modal-bg" id="modal-bg">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">X</button>
+            <h2 id="modal-title"></h2>
+            <div class="select-row" id="modal-select-row"></div>
+            <video id="modal-video" class="video-player" controls></video>
+            <iframe id="modal-iframe" class="video-iframe hidden" allowfullscreen frameborder="0"></iframe>
+            <div id="modal-desc" style="margin-top:12px;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Dummy-Daten für Einzelvideos (füge deine echten Daten ein)
+        window.allSingleVideos = [
+            {
+                title: "Luminox Trailer",
+                description: "Der offizielle Trailer.",
+                video_url: "allvideos/trailer.mp4",
+                thumbnail_url: "allvideos/thumbnails/trailer.jpg"
+            }
+        ];
+
+        // Karten rendern und komplett klickbar machen
+        function renderCards(listElem, items, isSerie = false) {
+            listElem.innerHTML = "";
+            if (!items || !items.length) {
+                listElem.innerHTML = "<p>Keine Einträge gefunden.</p>";
+                return;
+            }
+            items.forEach((item, idx) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.tabIndex = 0;
+                card.innerHTML = `
+                    <img src="${item.thumbnail_url}" alt="Thumbnail">
+                    <div class="card-title">${item.title}</div>
+                    <div class="card-desc">${item.description || ""}</div>
+                    <div class="card-meta">${item.genre ? item.genre + " | " : ""}${item.year ? item.year : ""}</div>
+                    <button class="play-btn">${isSerie ? "Ansehen" : "Abspielen"}</button>
+                `;
+                card.onclick = () => {
+                    if (isSerie) openSerieModal(item);
+                    else openSingleVideoModal(item);
+                };
+                // Button ist nur Deko, nicht klickbar
+                card.querySelector('.play-btn').onclick = null;
+                listElem.appendChild(card);
+            });
+        }
+
+        renderCards(document.getElementById('trending-list'), window.allSeries, true);
+        renderCards(document.getElementById('new-list'), window.allSeries, true);
+        renderCards(document.getElementById('singlevideo-list'), window.allSingleVideos, false);
+        renderCards(document.getElementById('series-list'), window.allSeries, true);
+
+        // Modal für Einzelvideos
+        function openSingleVideoModal(video) {
+            document.getElementById('modal-title').textContent = video.title;
+            document.getElementById('modal-desc').textContent = video.description || "";
+            document.getElementById('modal-select-row').innerHTML = "";
+            const vid = document.getElementById('modal-video');
+            const iframe = document.getElementById('modal-iframe');
+            if (video.video_url && video.video_url.includes("1drv.ms")) {
+                vid.classList.add('hidden');
+                vid.pause();
+                iframe.src = video.video_url;
+                iframe.classList.remove('hidden');
+            } else {
+                iframe.classList.add('hidden');
+                iframe.src = "";
+                vid.src = video.video_url;
+                vid.classList.remove('hidden');
+                vid.load();
+            }
+            document.getElementById('modal-bg').style.display = 'block';
+        }
+
+        // Modal für Serien mit Staffel/Folgen-Auswahl
+        function openSerieModal(serie) {
+            document.getElementById('modal-title').textContent = serie.title;
+            document.getElementById('modal-desc').textContent = "";
+            let selectRow = `<label>Staffel: <select id="season-select" class="select-gradient"></select></label>
+                             <label>Folge: <select id="episode-select" class="select-gradient"></select></label>`;
+            document.getElementById('modal-select-row').innerHTML = selectRow;
+
+            const seasonSelect = document.getElementById('season-select');
+            serie.seasons.forEach((season, idx) => {
+                const opt = document.createElement('option');
+                opt.value = idx;
+                opt.textContent = `Staffel ${season.season}`;
+                seasonSelect.appendChild(opt);
+            });
+
+            function updateEpisodes(selectEpIdx = 0) {
+                const seasonIdx = seasonSelect.value;
+                const episodeSelect = document.getElementById('episode-select');
+                episodeSelect.innerHTML = "";
+                serie.seasons[seasonIdx].episodes.forEach((ep, idx) => {
+                    const opt = document.createElement('option');
+                    opt.value = idx;
+                    opt.textContent = `Folge ${ep.episode}: ${ep.title}`;
+                    episodeSelect.appendChild(opt);
+                });
+                episodeSelect.selectedIndex = selectEpIdx;
+                playEpisode(serie, seasonIdx, episodeSelect.value);
+            }
+
+            seasonSelect.onchange = function() {
+                updateEpisodes();
+            };
+
+            document.getElementById('episode-select').onchange = function() {
+                playEpisode(serie, seasonSelect.value, this.value);
+            };
+
+            updateEpisodes();
+
+            document.getElementById('modal-bg').style.display = 'block';
+        }
+
+        function playEpisode(serie, seasonIdx, episodeIdx) {
+            const episode = serie.seasons[seasonIdx].episodes[episodeIdx];
+            document.getElementById('modal-title').textContent = `${serie.title} – Staffel ${serie.seasons[seasonIdx].season}, Folge ${episode.episode}: ${episode.title}`;
+            document.getElementById('modal-desc').textContent = episode.description || "";
+            const vid = document.getElementById('modal-video');
+            const iframe = document.getElementById('modal-iframe');
+            if (episode.video_url && episode.video_url.includes("1drv.ms")) {
+                vid.classList.add('hidden');
+                vid.pause();
+                iframe.src = episode.video_url;
+                iframe.classList.remove('hidden');
+            } else {
+                iframe.classList.add('hidden');
+                iframe.src = "";
+                vid.src = episode.video_url || "";
+                vid.classList.remove('hidden');
+                vid.load();
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('modal-bg').style.display = 'none';
+            document.getElementById('modal-video').pause();
+            document.getElementById('modal-video').src = "";
+            document.getElementById('modal-iframe').src = "";
+        }
+    </script>
+</body>
+</html>
