@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<link rel="icon" type="image/png" href="allvideos/thumbnails/favicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luminox - Community Streaming</title>
@@ -18,14 +19,12 @@
     }
 </script>
 <style>
-    /* ...deine Styles bleiben unverändert... */
+    .luminox-gradient { background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); }
     .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
     .scrollbar-hide::-webkit-scrollbar { display: none; }
     .gradient-overlay { background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%); }
     .gradient-bottom { background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); }
-    .luminox-gradient { background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); }
     .luminox-gradient-text { background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    /* ...restliche Styles wie gehabt... */
 </style>
 </head>
 <body class="bg-black text-white min-h-screen">
@@ -37,11 +36,11 @@
             <h1 class="text-3xl font-bold luminox-gradient-text cursor-pointer" onclick="showHomepage()">
                 LUMINOX
             </h1>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#" onclick="showHomepage()" class="text-white hover:text-luminox-primary transition-colors duration-300">Home</a>
-                <a href="#" onclick="showCommunityVideos()" class="text-white hover:text-luminox-primary transition-colors duration-300">Community</a>
-                <a href="#" onclick="showTrending()" class="text-white hover:text-luminox-primary transition-colors duration-300">Trending</a>
-                <a href="#" onclick="showRecent()" class="text-white hover:text-luminox-primary transition-colors duration-300">Neu</a>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="luminox-gradient-text font-semibold tracking-wide text-base hover:opacity-80 transition">Home</a>
+                <a href="community.html" class="luminox-gradient-text font-semibold tracking-wide text-base hover:opacity-80 transition">Community</a>
+                <a href="community.html" class="luminox-gradient-text font-semibold tracking-wide text-base hover:opacity-80 transition">Trending</a>
+                <a href="community.html" class="luminox-gradient-text font-semibold tracking-wide text-base hover:opacity-80 transition">Neu</a>
             </nav>
         </div>
         <div class="flex items-center space-x-4">
@@ -76,11 +75,12 @@
                     Entdecke einzigartige Inhalte!
                 </p>
                 <div class="flex space-x-4 pt-4" id="heroButtons">
-                    <button onclick="showCommunityVideos()" class="btn-gradient text-white px-8 py-3 rounded-md transition-all duration-300 flex items-center text-lg font-semibold">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button onclick="window.location.href='community.html'" class="relative btn-gradient text-white px-8 py-3 rounded-full transition-all duration-300 flex items-center text-lg font-semibold overflow-hidden">
+                        <svg class="w-5 h-5 mr-2 z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                         </svg>
-                        Videos entdecken
+                        <span class="relative z-10 font-semibold">Videos entdecken</span>
+                        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-12 rounded-full luminox-gradient opacity-60 z-0"></span>
                     </button>
                 </div>
                 <div class="flex items-center space-x-6 pt-6 text-sm text-gray-400">
@@ -96,57 +96,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Content Sections -->
-    <main class="container mx-auto px-4 py-8" id="homepageContent">
-        <!-- Featured/Trending -->
-        <div id="featuredSection" class="mb-12">
-            <h2 class="text-3xl font-bold text-white mb-6 flex items-center">
-                <span class="luminox-gradient-text">🔥 Trending Videos</span>
-                <div class="ml-4 w-16 h-0.5 luminox-gradient rounded"></div>
-            </h2>
-            <div id="featuredGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Featured videos will be shown here -->
-            </div>
-        </div>
-
-        <!-- Recent Uploads -->
-        <div id="recentSection" class="mb-12">
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-                <span class="luminox-gradient-text">⚡ Neueste Uploads</span>
-                <div class="ml-3 w-12 h-0.5 luminox-gradient rounded"></div>
-            </h2>
-            <div id="recentGrid" class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
-                <!-- Recent videos will be shown here -->
-            </div>
-        </div>
-
-        <!-- All Community Videos -->
-        <div id="allVideosSection" class="mb-8">
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-                <span class="luminox-gradient-text">🌍 Community Bibliothek</span>
-                <div class="ml-3 w-12 h-0.5 luminox-gradient rounded"></div>
-            </h2>
-            <div id="allVideosGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <!-- All videos will be shown here -->
-            </div>
-        </div>
-
-        <!-- Loading State -->
-        <div id="loadingState" class="text-center py-16">
-            <div class="loading-spinner mx-auto mb-4"></div>
-            <p class="text-gray-400">Lade Community Videos...</p>
-        </div>
-
-        <!-- Empty State -->
-        <div id="emptyState" class="text-center py-16" style="display: none;">
-            <svg class="mx-auto h-24 w-24 text-gray-400 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-            </svg>
-            <h3 class="text-2xl font-bold luminox-gradient-text mb-4">Noch keine Videos!</h3>
-            <p class="text-gray-400 mb-6">Füge Videos im Code hinzu, damit sie hier erscheinen.</p>
-        </div>
-    </main>
 </div>
 
 <!-- Video Player Page -->
@@ -192,7 +141,6 @@
 
 <script>
     // === Statische Videoliste ===
-    // Hier kannst du deine Videos eintragen!
     const allVideos = [
         {
             id: 1,
@@ -225,166 +173,11 @@
         // ...weitere Videos...
     ];
 
-    // === Anzeige-Logik bleibt wie gehabt ===
-    function displayVideos() {
-        if (allVideos.length === 0) {
-            showEmptyState();
-            return;
-        }
-        hideEmptyState();
-        displayFeaturedVideos();
-        displayRecentVideos();
-        displayAllVideos();
-    }
-
-    function showEmptyState() {
-        document.getElementById('loadingState').style.display = 'none';
-        document.getElementById('emptyState').style.display = 'block';
-        document.getElementById('featuredSection').style.display = 'none';
-        document.getElementById('recentSection').style.display = 'none';
-        document.getElementById('allVideosSection').style.display = 'none';
-    }
-
-    function hideEmptyState() {
-        document.getElementById('loadingState').style.display = 'none';
-        document.getElementById('emptyState').style.display = 'none';
-        document.getElementById('featuredSection').style.display = 'block';
-        document.getElementById('recentSection').style.display = 'block';
-        document.getElementById('allVideosSection').style.display = 'block';
-    }
-
-    function displayFeaturedVideos() {
-        const featuredVideos = allVideos.slice(0, 3);
-        const featuredGrid = document.getElementById('featuredGrid');
-        featuredGrid.innerHTML = '';
-        featuredVideos.forEach(video => {
-            const card = createFeaturedVideoCard(video);
-            featuredGrid.appendChild(card);
-        });
-    }
-
-    function displayRecentVideos() {
-        const recentVideos = allVideos.slice(0, 8);
-        const recentGrid = document.getElementById('recentGrid');
-        recentGrid.innerHTML = '';
-        recentVideos.forEach(video => {
-            const card = createHorizontalVideoCard(video);
-            recentGrid.appendChild(card);
-        });
-    }
-
-    function displayAllVideos() {
-        const allGrid = document.getElementById('allVideosGrid');
-        allGrid.innerHTML = '';
-        allVideos.forEach(video => {
-            const card = createVideoCard(video);
-            allGrid.appendChild(card);
-        });
-    }
-
-    function createFeaturedVideoCard(video) {
-        const card = document.createElement('div');
-        card.className = 'bg-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 cursor-pointer group content-card';
-        card.innerHTML = `
-            <div class="relative">
-                <img src="${video.thumbnail_url}" alt="${video.title}" class="w-full h-48 object-cover">
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                    <svg onclick="playVideo(${video.id})" class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-16 h-16 pulse-play cursor-pointer" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                </div>
-                <div class="absolute top-3 right-3">
-                    <span class="luminox-gradient px-2 py-1 rounded-full text-white text-xs font-medium">FSK ${video.rating}</span>
-                </div>
-                <div class="absolute top-3 left-3">
-                    <span class="trending-badge px-2 py-1 rounded-full text-white text-xs font-medium">🔥 TRENDING</span>
-                </div>
-                <div class="absolute bottom-3 right-3">
-                    <span class="bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">👁️ ${video.views}</span>
-                </div>
-            </div>
-            <div class="p-4">
-                <h3 class="text-white font-bold text-lg mb-2 line-clamp-2">${video.title}</h3>
-                <div class="flex items-center space-x-2 mb-2">
-                    <div class="w-6 h-6 luminox-gradient rounded-full flex items-center justify-center">
-                        <span class="text-white text-xs font-bold">${video.creator_name.charAt(0)}</span>
-                    </div>
-                    <span class="text-gray-400 text-sm">${video.creator_name}</span>
-                </div>
-                <div class="flex items-center justify-between text-xs">
-                    <span class="bg-gray-700 text-white px-2 py-1 rounded">${video.genre}</span>
-                    <span class="text-gray-400">${formatDate(video.upload_date)}</span>
-                </div>
-            </div>
-        `;
-        return card;
-    }
-
-    function createHorizontalVideoCard(video) {
-        const card = document.createElement('div');
-        card.className = 'flex-shrink-0 w-48 bg-gray-900 rounded-lg hover:bg-gray-800 transition-all duration-300 cursor-pointer group content-card';
-        card.innerHTML = `
-            <div class="relative">
-                <img src="${video.thumbnail_url}" alt="${video.title}" class="w-full h-32 object-cover rounded-t-lg">
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center rounded-t-lg">
-                    <svg onclick="playVideo(${video.id})" class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-8 h-8 pulse-play cursor-pointer" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                </div>
-                <div class="absolute top-2 right-2">
-                    <span class="bg-black bg-opacity-70 text-white px-1 py-0.5 rounded text-xs">👁️ ${video.views}</span>
-                </div>
-            </div>
-            <div class="p-3">
-                <h3 class="text-white font-semibold text-sm mb-1 line-clamp-2">${video.title}</h3>
-                <p class="text-gray-400 text-xs mb-2">${video.creator_name}</p>
-                <div class="flex items-center justify-between text-xs">
-                    <span class="bg-gray-700 text-white px-2 py-1 rounded">${video.genre}</span>
-                </div>
-            </div>
-        `;
-        return card;
-    }
-
-    function createVideoCard(video) {
-        const card = document.createElement('div');
-        card.className = 'bg-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition-all duration-300 cursor-pointer group content-card';
-        card.innerHTML = `
-            <div class="relative">
-                <img src="${video.thumbnail_url}" alt="${video.title}" class="w-full h-32 object-cover">
-                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                    <svg onclick="playVideo(${video.id})" class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-8 h-8 pulse-play cursor-pointer" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                </div>
-                <div class="absolute top-2 right-2">
-                    <span class="luminox-gradient px-2 py-1 rounded-full text-white text-xs font-medium">FSK ${video.rating}</span>
-                </div>
-                <div class="absolute bottom-2 right-2">
-                    <span class="bg-black bg-opacity-70 text-white px-1 py-0.5 rounded text-xs">👁️ ${video.views}</span>
-                </div>
-            </div>
-            <div class="p-3">
-                <h3 class="text-white font-semibold text-sm mb-1 line-clamp-2">${video.title}</h3>
-                <p class="text-gray-400 text-xs mb-2">${video.creator_name}</p>
-                <div class="flex items-center justify-between text-xs">
-                    <span class="bg-gray-700 text-white px-2 py-1 rounded">${video.genre}</span>
-                    <span class="text-gray-400">${formatDate(video.upload_date)}</span>
-                </div>
-            </div>
-        `;
-        return card;
-    }
-
     function showHomepage() {
         document.getElementById('homepage').classList.remove('hidden');
         document.getElementById('videoPlayerPage').classList.add('hidden');
-        displayVideos();
     }
 
-    function showCommunityVideos() { showHomepage(); }
-    function showTrending() { showHomepage(); }
-    function showRecent() { showHomepage(); }
     function goBack() { showHomepage(); }
 
     function playVideo(videoId) {
@@ -419,44 +212,10 @@
         return date.toLocaleDateString('de-DE');
     }
 
-    // Suche
+    // Suche (optional, falls du sie behalten willst)
     document.addEventListener('DOMContentLoaded', function() {
-        displayVideos();
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            filterVideos(query);
-        });
+        // Kein Video-Grid mehr, daher keine Anzeige-Logik nötig
     });
-
-    function filterVideos(query) {
-        if (!query) {
-            displayVideos();
-            return;
-        }
-        const filteredVideos = allVideos.filter(video =>
-            video.title.toLowerCase().includes(query) ||
-            video.description.toLowerCase().includes(query) ||
-            video.creator_name.toLowerCase().includes(query) ||
-            video.genre.toLowerCase().includes(query)
-        );
-        const allGrid = document.getElementById('allVideosGrid');
-        allGrid.innerHTML = '';
-        if (filteredVideos.length === 0) {
-            allGrid.innerHTML = `
-                <div class="col-span-full text-center py-8">
-                    <p class="text-gray-400">Keine Videos gefunden für "${query}"</p>
-                </div>
-            `;
-        } else {
-            filteredVideos.forEach(video => {
-                const card = createVideoCard(video);
-                allGrid.appendChild(card);
-            });
-        }
-        document.getElementById('featuredSection').style.display = 'none';
-        document.getElementById('recentSection').style.display = 'none';
-    }
 </script>
 </body>
 </html>
