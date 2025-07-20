@@ -145,7 +145,7 @@ window.allSeries = [
     season: 6,
     episodes: [
         { episode: 1,  title: "Im Bann der Walküren (1)", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQoY-k1mMKdT7mhmRjw6f4CAY9oGEUaVMAAohBZ4hH8Nsk?width=1280&height=720", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (1).jpg", description: "Die Reise beginnt." },
-        { episode: 2,  title: "Im Bann der Walküren (2)", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (2).jpg", description: "Die Reise beginnt." },
+        { episode: 2,  title: "Im Bann der Walküren (2)", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSQ5PwXhyYaToXlcgug1qzZAVqKkOzraxdSN_zBjJwd-Zg?width=512&height=384", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (2).jpg", description: "Die Reise beginnt." },
         { episode: 3,  title: "Vergissmeinnicht", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (3).jpg", description: "Die Reise beginnt." },
         { episode: 4,  title: "Die Ohnmacht der Drei", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (4).jpg", description: "Die Reise beginnt." },
         { episode: 5,  title: "Tödliche Liebe", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (5).jpg", description: "Die Reise beginnt." },
