@@ -17,7 +17,7 @@ window.allSeries = [
                     { episode: 4,  title: "Rendezvous mit einem Geist", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRH4CI4N7XRRKvFEsYr6Op3AWrz2YSdRdBcxV-vyI_tgPo", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (4).jpg", description: "Die Reise beginnt." },
                     { episode: 5,  title: "Tödliche Träume", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSCyi0MY2ENSoq-m8-vnavrAf8TZYh0N55mtfnF8ckQ5J0", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (5).jpg", description: "Die Reise beginnt." },
                     { episode: 6,  title: "Höllenhochzeit", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSaiMbgMCjRRL50MrOIMsTIATm1vWwm1PPjeBGvcAj9e5E", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (6).jpg", description: "Die Reise beginnt." },
-                    { episode: 7,  title: "Schwester der Nacht", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQThpkvHu-26S41nn5ZHzjiCAbYksC7rZKbzkiRAkpjYb50", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (7).jpg", description: "Die Reise beginnt." },
+                    { episode: 7,  title: "Schwester der Nacht", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQThpkvHu-26S41nn5ZHzjiCAbYoksC7rZKbzkiRAkpjYb50", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (7).jpg", description: "Die Reise beginnt." },
                     { episode: 8,  title: "Der Wahrheitszauber", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTM-aVUC82PRJbSohld8MHaARfo0E1H-yjzmHgyEytB9cs", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (8).jpg", description: "Die Reise beginnt." },
                     { episode: 9,  title: "Rückkehr aus dem Jenseits", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSdpIud1Mc0Qb_mGcytTLAiAdBq3BPrsy4zGmjSmh5vorU", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (9).jpg", description: "Die Reise beginnt." },
                     { episode: 10, title: "Machtlos", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQPqDOwzc4KR7iOReH0ol3PAb8LpVDF4eqZe0w65QwTWng", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 1/Folge (10).jpg", description: "Die Reise beginnt." },
@@ -38,114 +38,113 @@ window.allSeries = [
             {
                 season: 2,
                 episodes: [
-                    { episode: 1,  title: "Abraxas", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (1).jpg", description: "Die allererste Folge!" },
-                    { episode: 2,  title: "Hexenjagd", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (2).jpg", description: "Die Reise beginnt." },
-                    { episode: 3,  title: "Voll Im Bild", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (3).jpg", description: "Die Reise beginnt." },
-                    { episode: 4,  title: "Pakt mit dem Teufel", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (4).jpg", description: "Die Reise beginnt." },
-                    { episode: 5,  title: "Einfach unwiderstehlich", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (5).jpg", description: "Die Reise beginnt." },
-                    { episode: 6,  title: "Der Auserwählte", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (6).jpg", description: "Die Reise beginnt." },
-                    { episode: 7,  title: "Die Akasha-Rollen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (7).jpg", description: "Die Reise beginnt." },
-                    { episode: 8,  title: "Schrecken der Tiefe", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (8).jpg", description: "Die Reise beginnt." },
-                    { episode: 9,  title: "Zwischen Himmel und Hölle", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (9).jpg", description: "Die Reise beginnt." },
-                    { episode: 10, title: "Mitten ins Herz", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (10).jpg", description: "Die Reise beginnt." },
-                    { episode: 11, title: "Drei Hexen und ein Baby", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (11).jpg", description: "Die Reise beginnt." },
-                    { episode: 12, title: "Fieber", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (12).jpg", description: "Die Reise beginnt." },
-                    { episode: 13, title: "Ein tierisch guter Spuk", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (13).jpg", description: "Die Reise beginnt." },
-                    { episode: 14, title: "Verflucht in alle Ewigkeit", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (14).jpg", description: "Die Reise beginnt." },
-                    { episode: 15, title: "Das Zeichen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (15).jpg", description: "Die Reise beginnt." },
-                    { episode: 16, title: "Vom Pech verfolgt", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (16).jpg", description: "Die Reise beginnt." },
-                    { episode: 17, title: "Ewige Jugend", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (17).jpg", description: "Die Reise beginnt." },
-                    { episode: 18, title: "Der reinste Horror", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (18).jpg", description: "Die Reise beginnt." },
-                    { episode: 19, title: "Ex Libris", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (19).jpg", description: "Die Reise beginnt." },
-                    { episode: 20, title: "Hexenblut", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (20).jpg", description: "Die Reise beginnt." },
-                    { episode: 21, title: "Die Reiter der Apokalypse", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (21).jpg", description: "Die Reise beginnt." },
-                    { episode: 22, title: "Wünsch dir was", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (22).jpg", description: "Die Reise beginnt." }
+                    { episode: 1,  title: "Abraxas", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSYuzFTZ0xBR7RYel0EO3h3ASpUuNcRHHXD2a2R6snKcGM", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (1).jpg", description: "Die allererste Folge!" },
+                    { episode: 2,  title: "Hexenjagd", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTEmdFagtslS5JWLJnLW8byAWRDH4Yo0YAg3ciSCI4nBrY", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (2).jpg", description: "Die Reise beginnt." },
+                    { episode: 3,  title: "Voll Im Bild", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRnQurOcVAcTKvOeyghSlfuAUAUyUUYH1l4YeEl94UJygQ", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (3).jpg", description: "Die Reise beginnt." },
+                    { episode: 4,  title: "Pakt mit dem Teufel", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQT1qVCJeDVGTZ2yxhFN1HjAAT_oqdlB-9IUm5r0_N4CSWQ", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (4).jpg", description: "Die Reise beginnt." },
+                    { episode: 5,  title: "Einfach unwiderstehlich", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTROP5nCbCyTp3yJD96d4PMAcn_e9O0bPtVm0Yt0RxYxdo", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (5).jpg", description: "Die Reise beginnt." },
+                    { episode: 6,  title: "Der Auserwählte", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTiw-sM-BqDRJyNxfgo3Gz8ATtS2r0aoQQyAqo8JzJbN6E", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (6).jpg", description: "Die Reise beginnt." },
+                    { episode: 7,  title: "Die Akasha-Rollen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRPUR5YUdCbQbRM3Z3pANefAX38E32-5d-OA3C-sy-NOp4", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (7).jpg", description: "Die Reise beginnt." },
+                    { episode: 8,  title: "Schrecken der Tiefe", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQFWHM9AveSRIj-iIKgDoNAARX_rP2TVW96WWPQHIedFJ8", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (8).jpg", description: "Die Reise beginnt." },
+                    { episode: 9,  title: "Zwischen Himmel und Hölle", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQT4eBqXRZZTTapjQjJlV-r2AVR-vwDhbrZPlGZpBXxyj-A", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (9).jpg", description: "Die Reise beginnt." },
+                    { episode: 10, title: "Mitten ins Herz", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRoTrF64N8JRJkolorMeGpKAX8XqGsG_bOBKDwcJmJC4Hg", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (10).jpg", description: "Die Reise beginnt." },
+                    { episode: 11, title: "Drei Hexen und ein Baby", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSbbQO5V8mGT7li20Ivi2OoAWEy14-76o9jA9mbirGk3zA", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (11).jpg", description: "Die Reise beginnt." },
+                    { episode: 12, title: "Fieber", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSB0x5asP-uSqp1NC9sxw28ASTZnlhVzRp5L7eYriZaY9Q", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (12).jpg", description: "Die Reise beginnt." },
+                    { episode: 13, title: "Ein tierisch guter Spuk", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSzxv_NaqW3R5fLOe9nOiVGAQb9uQM4LRSeC-y1IguSi4w", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (13).jpg", description: "Die Reise beginnt." },
+                    { episode: 14, title: "Verflucht in alle Ewigkeit", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTeic6IB6vVS5fr4n1KE-JKAUhj2KHOeTz-QVHEBpCuGw0", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (14).jpg", description: "Die Reise beginnt." },
+                    { episode: 15, title: "Das Zeichen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTZCbKbq9JWQ6IiriLxpDqBAUTa5LBgmdDLNKL9QIdTsNM", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (15).jpg", description: "Die Reise beginnt." },
+                    { episode: 16, title: "Vom Pech verfolgt", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSwshtYrRSqRZuWEoDElYFKAV3SQwb0sEVpShKBA6IOHEY", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (16).jpg", description: "Die Reise beginnt." },
+                    { episode: 17, title: "Ewige Jugend", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTV0kaJ34_UQb6hNFEJmNkiAWgpHyD9xgH5ftwNizt16JA", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (17).jpg", description: "Die Reise beginnt." },
+                    { episode: 18, title: "Der reinste Horror", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSxuCTtbS9hToQEAI0WDoTlAZ4FWO5f8r0UoFz7xxJ0B9A", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (18).jpg", description: "Die Reise beginnt." },
+                    { episode: 19, title: "Ex Libris", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSzywR8dCIvQJLITgyh8T17AZCgAM-Mi-1NDpZ4PfAo-hg", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (19).jpg", description: "Die Reise beginnt." },
+                    { episode: 20, title: "Hexenblut", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRJ4juTaioPRpTFE5ik0PG6ARt62FNQXXufErd7rGdhKuw", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (20).jpg", description: "Die Reise beginnt." },
+                    { episode: 21, title: "Die Reiter der Apokalypse", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQ-ZFn8nPCoQarfs8X2unKyASdxMNURXBXP0UfI-xhUM4k", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (21).jpg", description: "Die Reise beginnt." },
+                    { episode: 22, title: "Wünsch dir was", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTOooqjdXlmTr_38SG-fwanASYVRjlSGP5p611ItEPES7I", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 2/Folge (22).jpg", description: "Die Reise beginnt." }
                 ]
             },
             {
                 season: 3,
                 episodes: [
-                    { episode: 1,  title: "Die Verschwörung des Bösen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (1).jpg", description: "Die Reise beginnt." },
-                    { episode: 2,  title: "Hexenhochzeit", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (2).jpg", description: "Die Reise beginnt." },
-                    { episode: 3,  title: "Von Feen und Trollen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (3).jpg", description: "Die Reise beginnt." },
-                    { episode: 4,  title: "Das Zeitportal", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (4).jpg", description: "Die Reise beginnt." },
-                    { episode: 5,  title: "Die Dämonenfalle", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (5).jpg", description: "Die Reise beginnt." },
-                    { episode: 6,  title: "Alle oder keine", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (6).jpg", description: "Die Reise beginnt." },
-                    { episode: 7,  title: "Die Macht der Gefühle", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (7).jpg", description: "Die Reise beginnt." },
-                    { episode: 8,  title: "Balthasar", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (8).jpg", description: "Die Reise beginnt." },
-                    { episode: 9,  title: "Besessen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (9).jpg", description: "Die Reise beginnt." },
-                    { episode: 10, title: "Wenn der Elsmann kommt", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (10).jpg", description: "Die Reise beginnt." },
-                    { episode: 11, title: "Gegen alle Regeln", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (11).jpg", description: "Die Reise beginnt." },
-                    { episode: 12, title: "Verlorene Seelen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (12).jpg", description: "Die Reise beginnt." },
-                    { episode: 13, title: "Das Böse in mir", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (13).jpg", description: "Die Reise beginnt." },
-                    { episode: 14, title: "Stadt der Geister", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (14).jpg", description: "Die Reise beginnt." },
-                    { episode: 15, title: "Trauung mit Hindernissen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (15).jpg", description: "Die Reise beginnt." },
-                    { episode: 16, title: "Der Tod siegt immer", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (16).jpg", description: "Die Reise beginnt." },
-                    { episode: 17, title: "Aller guten Dinge sind neun", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (17).jpg", description: "Die Reise beginnt." },
-                    { episode: 18, title: "Die sieben Todsünden", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (18).jpg", description: "Die Reise beginnt." },
-                    { episode: 19, title: "Die Bruderschaft", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (19).jpg", description: "Die Reise beginnt." },
-                    { episode: 20, title: "Freund oder Feind?", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (20).jpg", description: "Die Reise beginnt." },
-                    { episode: 21, title: "Die Todesfee", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (21).jpg", description: "Die Reise beginnt." },
-                    { episode: 22, title: "Das Ende", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (22).jpg", description: "Die Reise beginnt." }
+                    { episode: 1,  title: "Die Verschwörung des Bösen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQUmpFB2UroS4wNKlI7Gzo3AQE8BpOy4uxJ61GxuKaHJ_I", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (1).jpg", description: "Die Reise beginnt." },
+                    { episode: 2,  title: "Hexenhochzeit", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRDyeNEtGkESbj18mOg5dWzAd2NQK-9c-GIhbrf8V8pEYY", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (2).jpg", description: "Die Reise beginnt." },
+                    { episode: 3,  title: "Von Feen und Trollen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQ_keAywqGiSYP_MSf6uKhlARBLUKsKP_uW1MSss3IHfDo", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (3).jpg", description: "Die Reise beginnt." },
+                    { episode: 4,  title: "Das Zeitportal", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRWWPTXwqZORZIJz1sxhUGbAa6GcAHGk3zEvKTUCm7Pq70", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (4).jpg", description: "Die Reise beginnt." },
+                    { episode: 5,  title: "Die Dämonenfalle", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSg5qjswhv0TJAf7zW2_0bcAWNJtGSOOPZCakCrhaXYzZU", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (5).jpg", description: "Die Reise beginnt." },
+                    { episode: 6,  title: "Alle oder keine", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSEFftmhsnJSr22wT4zGmLPAY5ipm0DzNRlylmXo80UJVQ", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (6).jpg", description: "Die Reise beginnt." },
+                    { episode: 7,  title: "Die Macht der Gefühle", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQR3FXXOWRy-SpYKlqRz3aUJAd0g2nGIASztyNM5PCs5hlA", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (7).jpg", description: "Die Reise beginnt." },
+                    { episode: 8,  title: "Balthasar", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQR8X5OBGjjHT66rIWhWG3xsAQY0RNBToRJnqR8yJPmvxtQ", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (8).jpg", description: "Die Reise beginnt." },
+                    { episode: 9,  title: "Besessen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQK7y3douVYQZmLEI2NM4SoAe-prRejYfYM-JCCTiSNNR0", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (9).jpg", description: "Die Reise beginnt." },
+                    { episode: 10, title: "Wenn der Elsmann kommt", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQT9zltVrcQmTaqhbC86aikJAeKBB59GAOvB5zdf3eq-Lbg", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (10).jpg", description: "Die Reise beginnt." },
+                    { episode: 11, title: "Gegen alle Regeln", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSq-hGEbcm1Q5thgdI7R0VmAZRiCZmF4v-iopF-H8VRCIg", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (11).jpg", description: "Die Reise beginnt." },
+                    { episode: 12, title: "Verlorene Seelen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTAoodez49MT5vOXfe7hrkHAbb2EIluvqxthzRueRuT7BY", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (12).jpg", description: "Die Reise beginnt." },
+                    { episode: 13, title: "Das Böse in mir", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSqG2ZbUgAKQqKBW14B9KBAAd93JJAJyiQ8uDK_ghHzkVE", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (13).jpg", description: "Die Reise beginnt." },
+                    { episode: 14, title: "Stadt der Geister", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQuXTayDcibR4f66GmkWnSPATktltE2MORi4JKxX9_3tRk", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (14).jpg", description: "Die Reise beginnt." },
+                    { episode: 15, title: "Trauung mit Hindernissen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQnnGPyEs4LR6Hl30uB4BB5AfCjSrQUhwiToDgmJFe1v2Q", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (15).jpg", description: "Die Reise beginnt." },
+                    { episode: 16, title: "Der Tod siegt immer", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTgXJSRCPRQQJNK4YEQhmLfAfnz7ubvWuPdyYM0iZ2BUBw", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (16).jpg", description: "Die Reise beginnt." },
+                    { episode: 17, title: "Aller guten Dinge sind neun", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQNqleXz749Qr-1pz6tbH_ZAXcBkmAhVyV5EdJx--wMFhI", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (17).jpg", description: "Die Reise beginnt." },
+                    { episode: 18, title: "Die sieben Todsünden", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQ9PLEjM7JrSpwMSPefcW2PAXYC4LQltPXd-KPZ1YaoTBE", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (18).jpg", description: "Die Reise beginnt." },
+                    { episode: 19, title: "Die Bruderschaft", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRR-a_kCSR1QapRMaAwCJplAe1NQmji7-Ib0gg70CWjnqo", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (19).jpg", description: "Die Reise beginnt." },
+                    { episode: 20, title: "Freund oder Feind?", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSry3aWB5_PRIVha4Kw4Jd3AWOy8ViB_FHIjwCLa8M2tFM", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (20).jpg", description: "Die Reise beginnt." },
+                    { episode: 21, title: "Die Todesfee", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQR5RBu7KqQdQanmB5R13jWdAfylCpDvluGitwZBSIxdFMQ", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (21).jpg", description: "Die Reise beginnt." },
+                    { episode: 22, title: "Das Ende", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQ1_QqJKJB7Tq-pyIxYZj0ZAcxr80FKPnnhcxOyPVlAZ84", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 3/Folge (22).jpg", description: "Die Reise beginnt." }
                 ]
             },
             {
                 season: 4,
                 episodes: [
-                    { episode: 1,  title: "Die neue Macht der Drei + 48 Stunden", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (1).jpg", description: "Die Reise beginnt." },
-                    { episode: 2,  title: "Hexenhochzeit", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (2).jpg", description: "Die Reise beginnt." },
-                    { episode: 3,  title: "Die drei Furien", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (3).jpg", description: "Die Reise beginnt." },
-                    { episode: 4,  title: "Der Mann mit dem Drachendolch", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (4).jpg", description: "Die Reise beginnt." },
-                    { episode: 5,  title: "Der Sammler", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (5).jpg", description: "Die Reise beginnt." },
-                    { episode: 6,  title: "Ein Prinz für Paige", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (6).jpg", description: "Die Reise beginnt." },
-                    { episode: 7,  title: "Hirngespinste", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (7).jpg", description: "Die Reise beginnt." },
-                    { episode: 8,  title: "Schwarz wie der Teufel", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (8).jpg", description: "Die Reise beginnt." },
-                    { episode: 9,  title: "Der Ring der Musen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (9).jpg", description: "Die Reise beginnt." },
-                    { episode: 10, title: "Geister der Vergangenheit", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (10).jpg", description: "Die Reise beginnt." },
-                    { episode: 11, title: "Die zwölf Geschworenen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (11).jpg", description: "Die Reise beginnt." },
-                    { episode: 12, title: "Feuer", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (12).jpg", description: "Die Reise beginnt." },
-                    { episode: 13, title: "Das Schwarze Nichts", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (13).jpg", description: "Die Reise beginnt." },
-                    { episode: 14, title: "Die Frage aller Fragen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (14).jpg", description: "Die Reise beginnt." },
-                    { episode: 15, title: "Die Braut trägt Schwarz", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (15).jpg", description: "Die Reise beginnt." },
-                    { episode: 16, title: "Das fünfte Rad", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (16).jpg", description: "Die Reise beginnt." },
-                    { episode: 17, title: "Der Soldat Leo Wyatt", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (17).jpg", description: "Die Reise beginnt." },
-                    { episode: 18, title: "Beiß mich", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (18).jpg", description: "Die Reise beginnt." },
-                    { episode: 19, title: "Die Krönung", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (19).jpg", description: "Die Reise beginnt." },
-                    { episode: 20, title: "Lang lebe die Königin", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (20).jpg", description: "Die Reise beginnt." },
-                    { episode: 21, title: "Die Brut des Bösen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (21).jpg", description: "Die Reise beginnt." },
-                    { episode: 22, title: "Der Engel des Schicksals", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (22).jpg", description: "Die Reise beginnt." }
+                    { episode: 1,  title: "Die neue Macht der Drei + 48 Stunden", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQS6SqijqBP6SbmNfk6_77XlAXBK4Vc8fymmSi2Q-uRpii8", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (1).jpg", description: "Die Reise beginnt." },
+                    { episode: 3,  title: "Die drei Furien", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRviXXzDTF3SbQk3hdfBHlHAR2i7QsGAspsS87Q-fbFiRg", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (3).jpg", description: "Die Reise beginnt." },
+                    { episode: 4,  title: "Der Mann mit dem Drachendolch", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRGgTF-lyJmTr2Y01oSEcksAXp7IIdH7IPHizlUhd9yET4", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (4).jpg", description: "Die Reise beginnt." },
+                    { episode: 5,  title: "Der Sammler", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRS0JAVhiwiRLoo_3jzf2_lAWXvP34Qn5evH9G8E5-SI7g", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (5).jpg", description: "Die Reise beginnt." },
+                    { episode: 6,  title: "Ein Prinz für Paige", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQS0ge5XVxmMT6lShZnGgSYuAeTwobGlucKVgUwtMgTAcxU", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (6).jpg", description: "Die Reise beginnt." },
+                    { episode: 7,  title: "Hirngespinste", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQNgSI_jObKTZvx8K_pKaonAVny-7TLydn4ooRMcwBApBg", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (7).jpg", description: "Die Reise beginnt." },
+                    { episode: 8,  title: "Schwarz wie der Teufel", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQX-wVxIbcTT7_sXKIywCWxAblBGr5W5_4Jh1iQ4G1L0BI", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (8).jpg", description: "Die Reise beginnt." },
+                    { episode: 9,  title: "Der Ring der Musen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRvhYpK4GXTSJYiQM1IVLL-AdPNO-kPXOXvs4StahvtcU4", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (9).jpg", description: "Die Reise beginnt." },
+                    { episode: 10, title: "Geister der Vergangenheit", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTKDN1dEPW0Q4KBYo1T-KdNAYARpZBVPqSichaSysifarw", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (10).jpg", description: "Die Reise beginnt." },
+                    { episode: 11, title: "Die zwölf Geschworenen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQR6z0rA9nA0TaXuqqsD9ui_Ab3uj5ZJkqPkTK49Ukh_N94", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (11).jpg", description: "Die Reise beginnt." },
+                    { episode: 12, title: "Feuer", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRzqqY5_JJoSLfFAFcsRgzlAbz1OEP1-dNdXI2UGMWY72Y", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (12).jpg", description: "Die Reise beginnt." },
+                    { episode: 13, title: "Das Schwarze Nichts", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQS5_8_iQrxwTqfFp5YBkhm9AQy13L8aYZyBQZ5xlzBcPYw", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (13).jpg", description: "Die Reise beginnt." },
+                    { episode: 14, title: "Die Frage aller Fragen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRV6M_NaBnURbwTviDrJeHZAaaQ1Qt-L5T52eeCjLyS3_Y", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (14).jpg", description: "Die Reise beginnt." },
+                    { episode: 15, title: "Die Braut trägt Schwarz", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSb7lvWqw0nQYJGZRVHQhA3AQJsYp4q51qls9iPBMiF8aU", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (15).jpg", description: "Die Reise beginnt." },
+                    { episode: 16, title: "Das fünfte Rad", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTn3ts0j4DoT660aJNcT8hnAY4B20HCiDebMb8QJY6mIXA", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (16).jpg", description: "Die Reise beginnt." },
+                    { episode: 17, title: "Der Soldat Leo Wyatt", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQT_A9vrco9_RpjJPmkfVJwqAYdgVs62jm1c4eVQ2AyvnzU", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (17).jpg", description: "Die Reise beginnt." },
+                    { episode: 18, title: "Beiß mich", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRQCNsBwROhS6TmkNcvwAjRAYo38OsOgJZORABFAqM0Xm4", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (18).jpg", description: "Die Reise beginnt." },
+                    { episode: 19, title: "Die Krönung", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTOJ4A2V6-ITIp3NQyUGzE2Ac633p0rjtpbKqnHoJ0iMmA", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (19).jpg", description: "Die Reise beginnt." },
+                    { episode: 20, title: "Lang lebe die Königin", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTH-UmIIQMHSrqc4Y72Fd6tAZ9NboY-70O1BcPhdlOKmbs", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (20).jpg", description: "Die Reise beginnt." },
+                    { episode: 21, title: "Die Brut des Bösen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRCs0qGiNPGRZ0AZwVVrWelAVit5YT_MvWqfNZl3r0Cu2I", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (21).jpg", description: "Die Reise beginnt." },
+                    { episode: 22, title: "Der Engel des Schicksals", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQS0G08x56ZlRKGO_hL8KOu4AVRxtk-wHkqqs-bIOHE-NMI", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 4/Folge (22).jpg", description: "Die Reise beginnt." }
                 ]
             },
             {
     season: 5,
     episodes: [
-        { episode: 1,  title: "Der Ruf des Meeres (1+2)", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (1).jpg", description: "Die Reise beginnt." },
-        { episode: 3,  title: "Und wenn sie nicht gestorben sind …", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (3).jpg", description: "Die Reise beginnt." },
-        { episode: 4,  title: "Sirenengesang", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (4).jpg", description: "Die Reise beginnt." },
-        { episode: 5,  title: "Superhelden", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (5).jpg", description: "Die Reise beginnt." },
-        { episode: 6,  title: "Böse Augen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (6).jpg", description: "Die Reise beginnt." },
-        { episode: 7,  title: "Barbas", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (7).jpg", description: "Die Reise beginnt." },
-        { episode: 8,  title: "Tödliche Visionen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (8).jpg", description: "Die Reise beginnt." },
-        { episode: 9,  title: "Unverwundbar", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (9).jpg", description: "Die Reise beginnt." },
-        { episode: 10, title: "Mumienschanz", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (10).jpg", description: "Die Reise beginnt." },
-        { episode: 11, title: "Der Nexus", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (11).jpg", description: "Die Reise beginnt." },
-        { episode: 12, title: "Happy Birthday, Cole", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (12).jpg", description: "Die Reise beginnt." },
-        { episode: 13, title: "Quälgeister", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (13).jpg", description: "Die Reise beginnt." },
-        { episode: 14, title: "San Francisco träumt", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (14).jpg", description: "Die Reise beginnt." },
-        { episode: 15, title: "Ein magisches Geschenk", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (15).jpg", description: "Die Reise beginnt." },
-        { episode: 16, title: "Babyalarm", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (16).jpg", description: "Die Reise beginnt." },
-        { episode: 17, title: "Glücksbringer", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (17).jpg", description: "Die Reise beginnt." },
-        { episode: 18, title: "Katzenjammer", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (18).jpg", description: "Die Reise beginnt." },
-        { episode: 19, title: "Tanz um die ewige Quelle", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (19).jpg", description: "Die Reise beginnt." },
-        { episode: 20, title: "Nichts sehen, nichts hören, nichts sagen", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (20).jpg", description: "Die Reise beginnt." },
-        { episode: 21, title: "Hexentaufe", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (21).jpg", description: "Die Reise beginnt." },
-        { episode: 22, title: "Kampf der Titanen (1)", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (22).jpg", description: "Die Reise beginnt." }
+        { episode: 1,  title: "Der Ruf des Meeres (1+2)", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQZmNXHK-_HSZEOh1WasblqAZPPT7QWK9DvlzGtX7zpUAY", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (1).jpg", description: "Die Reise beginnt." },
+        { episode: 3,  title: "Und wenn sie nicht gestorben sind …", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRbhiueqSVCS4BquX9yZA90AfMJ4vrzRl20sz0PrYfBUzI", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (3).jpg", description: "Die Reise beginnt." },
+        { episode: 4,  title: "Sirenengesang", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQREiRSRLPt0QarufjI59zjwAX4BWVKE58Ex4omgZJuoemQ", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (4).jpg", description: "Die Reise beginnt." },
+        { episode: 5,  title: "Superhelden", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRoEKCNz1qvRrdC9Vi0A0TTAXECf6MQ1wwmpPYOGrtaIFs", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (5).jpg", description: "Die Reise beginnt." },
+        { episode: 6,  title: "Böse Augen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRbsPoKlZbrTY2Ge3COi7WjATbbtOW_koyeVMu7Chtu2Ns", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (6).jpg", description: "Die Reise beginnt." },
+        { episode: 7,  title: "Barbas", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSa94qIQFL7R45LjcSGdrVRAR6F30SFgIwJQcH9M6XTwmU", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (7).jpg", description: "Die Reise beginnt." },
+        { episode: 8,  title: "Tödliche Visionen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTokkbDu2nyTbWWfFLJJXN9ARn0ELdP2TChRRI-pjky0gI", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (8).jpg", description: "Die Reise beginnt." },
+        { episode: 9,  title: "Unverwundbar", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTkFGAtiWidSoJ5aztl-3AoAW1G5bPNSaIEQt2xltFh2kM", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (9).jpg", description: "Die Reise beginnt." },
+        { episode: 10, title: "Mumienschanz", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQT5eE25vsFPQZNe4f2WV9dFAREIDI4XUq0aijTXMg0rAC8", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (10).jpg", description: "Die Reise beginnt." },
+        { episode: 11, title: "Der Nexus", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRE8olooXe3RrUgnaRqSg6sAZ7XYzrBxSAs-l7_vaDnaUM", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (11).jpg", description: "Die Reise beginnt." },
+        { episode: 12, title: "Happy Birthday, Cole", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRn8mfADBYOSJAffVX6sDpIAcY3wi66hzJDTsk9ZV2dwpo", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (12).jpg", description: "Die Reise beginnt." },
+        { episode: 13, title: "Quälgeister", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQfB2MCMK9ZTrMy071agO21AQbUiSMCZr9iGiDBbHvqNgE", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (13).jpg", description: "Die Reise beginnt." },
+        { episode: 14, title: "San Francisco träumt", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSuqoz0SoP4QYQN63ubT5mCAQkFam9csrBJYybSv_dlhL8", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (14).jpg", description: "Die Reise beginnt." },
+        { episode: 15, title: "Ein magisches Geschenk", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQStjcRjRy0iQYLHBoZm6oCNARRs4D86_uWeYqH30qHWGhM", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (15).jpg", description: "Die Reise beginnt." },
+        { episode: 16, title: "Babyalarm", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSLve0tQ9bMQZh2YChUP1r9AXx3tQdAoKd-3D8jGlueYfI", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (16).jpg", description: "Die Reise beginnt." },
+        { episode: 17, title: "Glücksbringer", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSi4nff5__hTo9sa7JRmKB4AU8ZM_BsjuHfm1UZhBJeNNk", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (17).jpg", description: "Die Reise beginnt." },
+        { episode: 18, title: "Katzenjammer", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSAW4B4D5D9QYB5yivP_eDHAduRVfrP-UchlKxsCZ91mcE", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (18).jpg", description: "Die Reise beginnt." },
+        { episode: 19, title: "Tanz um die ewige Quelle", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSeZgXvZo3_QbO8d6WXEmYwAQdsXLqkKHlzGLeTa4Z5bDE", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (19).jpg", description: "Die Reise beginnt." },
+        { episode: 20, title: "Nichts sehen, nichts hören, nichts sagen", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTg4q5YChKDSbuyq54H2G-cAfnBoTLoJmoDH8K8V8-PTfc", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (20).jpg", description: "Die Reise beginnt." },
+        { episode: 21, title: "Hexentaufe", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSAhELX0L1xQqVDvIDOuAS6AUmQr9Bql0gpKGg7AG6ETL8", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (21).jpg", description: "Die Reise beginnt." },
+        { episode: 22, title: "Kampf der Titanen (1)", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQOC_1JqE0WTqhczPgOqD_1AdaO8L0_-h66WHVHs98amxw", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 5/Folge (22).jpg", description: "Die Reise beginnt." }
     ]
 },
 {
     season: 6,
     episodes: [
-        { episode: 1,  title: "Im Bann der Walküren (1)", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (1).jpg", description: "Die Reise beginnt." },
+        { episode: 1,  title: "Im Bann der Walküren (1)", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQoY-k1mMKdT7mhmRjw6f4CAY9oGEUaVMAAohBZ4hH8Nsk?width=1280&height=720", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (1).jpg", description: "Die Reise beginnt." },
         { episode: 2,  title: "Im Bann der Walküren (2)", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (2).jpg", description: "Die Reise beginnt." },
         { episode: 3,  title: "Vergissmeinnicht", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (3).jpg", description: "Die Reise beginnt." },
         { episode: 4,  title: "Die Ohnmacht der Drei", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 6/Folge (4).jpg", description: "Die Reise beginnt." },
@@ -221,10 +220,32 @@ window.allSeries = [
         { episode: 20, title: "Hexenkampf", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 8/Folge (20).jpg", description: "Die Reise beginnt." },
         { episode: 21, title: "Kill Billie: Vol.2", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 8/Folge (21).jpg", description: "Die Reise beginnt." },
         { episode: 22, title: "Das Vermächtnis der Halliwells", video_url: "", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 8/Folge (22).jpg", description: "Die Reise beginnt." }
-    ]
-} // schließt Staffel 8 ab
-] // schließt das seasons-Array ab
-} // schließt das Serien-Objekt ab
-]; // schließt das allSeries-Array ab
+    ] // Ende episodes-Array Staffel 8
+}   // <--- Diese Klammer fehlt bei dir!
+                ] // Ende allSeries-Array Staffel 5-8
+            }
         
-        
+    
+];  // Ende window.allSeries-Array
+
+window.allSingleVideos = [
+    {
+        title: "Luminox Trailer",
+        description: "Der offizielle Trailer.",
+        video_url: "allvideos/trailer.mp4", // oder z.B. ein externer Link: "https://1drv.ms/v/..."
+        thumbnail_url: "allvideos/thumbnails/trailer.jpg"
+    },
+    {
+        title: "Beispielvideo von YouTube",
+        description: "Ein externes Video von YouTube.",
+        video_url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        thumbnail_url: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+    },
+    {
+        title: "OneDrive Beispiel",
+        description: "Ein Video von OneDrive.",
+        video_url: "https://1drv.ms/v/s!AexampleLink",
+        thumbnail_url: "allvideos/thumbnails/onedrive.jpg"
+    }
+];
+// Weitere Videos nach diesem Muster hinzufügen!
