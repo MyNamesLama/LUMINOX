@@ -69,9 +69,10 @@
                     <span class="bg-green-600 px-3 py-1 rounded-full text-white text-sm font-medium">🔴 LIVE Community</span>
                     <span class="bg-gray-700 px-3 py-1 rounded-full text-white text-sm">Online Modus</span>
                 </div>
-                <h1 class="text-6xl font-bold mb-4 luminox-gradient-text" id="heroTitle">Teile deine Videos mit niemanden denn das geht nicht</h1>
+                <h1 class="text-6xl font-bold mb-4 luminox-gradient-text" id="heroTitle">Teile deine Videos mit niemanden den das geht nicht</h1>
                 <p class="text-xl text-gray-300 leading-relaxed max-w-2xl" id="heroDescription">
-                    Die Streaming Platform die mich meine Nerven Geraubt hat.
+                   Die Streaming Platform die mich meine Nerven geraubt hat. 
+                    Entdecke Fast GORNICHTS
                 </p>
                 <div class="flex space-x-4 pt-4" id="heroButtons">
                     <button onclick="window.location.href='community.html'" class="relative btn-gradient text-white px-8 py-3 rounded-full transition-all duration-300 flex items-center text-lg font-semibold overflow-hidden">
@@ -85,7 +86,7 @@
                 <div class="flex items-center space-x-6 pt-6 text-sm text-gray-400">
                     <div class="flex items-center">
                         <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                        <span>Kostenlos & Nervenraubend</span>
+                        <span>Dumm & Dümmer</span>
                     </div>
                     <div class="flex items-center">
                         <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
@@ -215,6 +216,79 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Kein Video-Grid mehr, daher keine Anzeige-Logik nötig
     });
+</script>
+<button id="secretBtn" style="position:fixed;bottom:16px;right:16px;width:32px;height:32px;opacity:0;z-index:9999;">&nbsp;</button>
+<div id="pinModal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
+  <div style="background:#23272f;padding:32px 24px;border-radius:12px;box-shadow:0 4px 32px #0008;display:flex;flex-direction:column;align-items:center;">
+    <label style="color:#fff;font-size:1.1em;margin-bottom:18px;">PIN eingeben:</label>
+    <div id="pinDots" style="display:flex;gap:16px;margin-bottom:18px;">
+      <div class="pin-dot" style="width:18px;height:18px;border-radius:50%;border:2px solid #10b981;background:#23272f;"></div>
+      <div class="pin-dot" style="width:18px;height:18px;border-radius:50%;border:2px solid #10b981;background:#23272f;"></div>
+      <div class="pin-dot" style="width:18px;height:18px;border-radius:50%;border:2px solid #10b981;background:#23272f;"></div>
+      <div class="pin-dot" style="width:18px;height:18px;border-radius:50%;border:2px solid #10b981;background:#23272f;"></div>
+    </div>
+    <div id="pinKeypad" style="display:grid;grid-template-columns:repeat(3,48px);gap:12px;">
+      <button class="pin-key" data-key="1" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">1</button>
+      <button class="pin-key" data-key="2" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">2</button>
+      <button class="pin-key" data-key="3" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">3</button>
+      <button class="pin-key" data-key="4" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">4</button>
+      <button class="pin-key" data-key="5" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">5</button>
+      <button class="pin-key" data-key="6" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">6</button>
+      <button class="pin-key" data-key="7" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">7</button>
+      <button class="pin-key" data-key="8" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">8</button>
+      <button class="pin-key" data-key="9" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">9</button>
+      <div></div>
+      <button class="pin-key" data-key="0" style="background:#181c22;color:#fff;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">0</button>
+      <button class="pin-key" data-key="back" style="background:#181c22;color:#f87171;font-size:1.3em;border:none;border-radius:8px;padding:12px 0;cursor:pointer;">←</button>
+    </div>
+    <div id="pinMsg" style="color:#f87171;margin-top:16px;min-height:22px;"></div>
+  </div>
+</div>
+<script>
+document.getElementById('secretBtn').addEventListener('click', function() {
+    document.getElementById('pinModal').style.display = 'flex';
+    pinInput = [];
+    updatePinDots();
+    document.getElementById('pinMsg').textContent = '';
+});
+document.getElementById('pinModal').addEventListener('click', function(e){
+    if(e.target === this) this.style.display = 'none';
+});
+
+let pinInput = [];
+const correctPin = ['8','5','8','6'];
+function updatePinDots() {
+    const dots = document.querySelectorAll('.pin-dot');
+    dots.forEach((dot, i) => {
+        dot.style.background = pinInput[i] ? '#10b981' : '#23272f';
+    });
+}
+document.querySelectorAll('.pin-key').forEach(btn => {
+    btn.addEventListener('click', function() {
+        if(this.dataset.key === 'back') {
+            pinInput.pop();
+        } else if(pinInput.length < 4) {
+            pinInput.push(this.dataset.key);
+        }
+        updatePinDots();
+        document.getElementById('pinMsg').textContent = '';
+        if(pinInput.length === 4) {
+            if(pinInput.join('') === correctPin.join('')) {
+                document.getElementById('pinMsg').style.color = '#10b981';
+                document.getElementById('pinMsg').textContent = 'Erfolg!';
+                setTimeout(()=>window.location.href='auswahl.html', 700);
+            } else {
+                document.getElementById('pinMsg').style.color = '#f87171';
+                document.getElementById('pinMsg').textContent = 'Falscher PIN!';
+                pinInput = [];
+                setTimeout(()=>{
+                    updatePinDots();
+                    document.getElementById('pinMsg').textContent = '';
+                }, 1000);
+            }
+        }
+    });
+});
 </script>
 </body>
 </html>

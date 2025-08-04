@@ -2,7 +2,7 @@ window.allSeries = [
     {
         id: 1,
         title: "Charmed - Zauberhafte Hexen",
-        description: "Die erste Luminox-Serie!",
+        description: "Charmed",
         genre: "Fantasy",
         year: 1998,
         creator_name: "Aaron Spellings Firma",
@@ -220,11 +220,84 @@ window.allSeries = [
         { episode: 20, title: "Hexenkampf", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTVXnzDZ2eTSLAixFHLouczAUti1blkApnIXifBNfc7kaQ?width=1280&height=720", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 8/Folge (20).jpg", description: "Die Reise beginnt." },
         { episode: 21, title: "Kill Billie: Vol.2", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQQ2ObeauzFTqFUsxNmrrQbAR7Z46V95OfBBS91-WQWEHY?width=1280&height=720", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 8/Folge (21).jpg", description: "Die Reise beginnt." },
         { episode: 22, title: "Das Vermächtnis der Halliwells", video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQT5QIA7T9F9Q6lT2wgwbBsvAUxmZrmnqhKCm32GQBj15KA?width=1280&height=720", thumbnail_url: "allvideos/Serien/Charmed - Zauberhafte Hexen/Staffel 8/Folge (22).jpg", description: "Die Reise beginnt." }
-    ] // Ende episodes-Array Staffel 8
-}   // <--- Diese Klammer fehlt bei dir!
-                ] // Ende allSeries-Array Staffel 5-8
+] // Ende episodes-Array Staffel 8
+    } // <--- Diese Klammer schließt das Staffel-Array ab!
+    // Hier fehlt KEINE weitere Klammer, da dies das Ende der letzten Staffel ist!
+    // Jetzt schließt das Charmed-Objekt:
+    ] // Ende seasons-Array
+}, // <--- Komma, weil jetzt das nächste Serien-Objekt kommt!
+{
+        id: 2,
+        title: "Harry Potter",
+        description: "DJ Dumbledore.",
+        genre: "Fantasy",
+        year: 2001,
+        creator_name: "J.K. Rowling",
+        thumbnail_url: "allvideos/thumbnails/harrypotter.jpg",
+        seasons: [
+            {
+                season: 1,
+                episodes: [
+                    {
+                        episode: 1,
+                        title: "Harry Potter und der Stein der Weisen",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSjjycNocKcQLR3Y9QSwm4qAaWEW_GkYEbiKaKx_bzTmqE?width=704&height=288",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (1).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    },
+                    {
+                        episode: 2,
+                        title: "Harry Potter und die Kammer des Schreckens",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQQBea5b_ytmQLScVYewQKtOAcKz2CwHbnW9rWYC4py3Q4k?width=1280&height=528",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (2).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    },
+                    {
+                        episode: 3,
+                        title: "Harry Potter und der Gefangene von Askaban",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTeWPRmkHrQR45fiflGi5ThATvo8Y62fsS8N5TZSbOGSBw?width=704&height=288",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (2).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    },
+                    {
+                        episode: 4,
+                        title: "Harry Potter und der Feuerkelch",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQSmGHOzqZ83TZMhS1GgfY2dAYXQygpt2jPOcfTSXPc2CWk?width=704&height=288",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (2).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    },
+                    {
+                        episode: 5,
+                        title: "Harry Potter und der Orden des Phönix",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTTIyKOTrWhQYu-pCavefyMAVsC_TE6Tu5b1q3C95AOFys?width=704&height=288",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (2).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    },
+                    {
+                        episode: 6,
+                        title: "Harry Potter und der Halbblutprinz",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQS6tJ3lCO84SLjjYMw_tcgoAT-yOc-DYFcYCT4J6jNryIs?width=1920&height=800",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (2).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    },
+                    {
+                        episode: 7,
+                        title: "Harry Potter und die Heiligtümer des Todes 1",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQTTUOhY2iCWRI2atSyT7AW4AWHqsEtSbrJwItlnnFMemeY?width=640&height=272",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (2).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    },
+                    {
+                        episode: 8,
+                        title: "Harry Potter und die Heiligtümer des Todes 2",
+                        video_url: "https://1drv.ms/v/c/f0d0150b189f1d96/IQRzad88ZTElSoR3fCdNzy73AWmNOuqNyKOSxktRmidsu98?width=688&height=288",
+                        thumbnail_url: "allvideos/Serien/Stranger Things/Staffel 1/Folge (2).jpg",
+                        description: "DJ DUMBLEDORE IN DA HOUSE"
+                    }
+                ]
             }
-        
+        ]
+    },
     
 ];  // Ende window.allSeries-Array
 
