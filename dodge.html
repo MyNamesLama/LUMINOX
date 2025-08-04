@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Dodge the Squares!</title>
+  <style>
+    body { background: #23272f; margin: 0; }
+    canvas { display: block; margin: 30px auto; background: #e0eaff; border-radius: 12px; }
+    #score { color: #10b981; text-align: center; font-family: Arial; font-size: 1.3em; margin-top: 10px; }
+    #info { color: #23272f; text-align: center; font-family: Arial; font-size: 1.1em; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div id="score">Zeit: 0.00s</div>
+  <div id="info">Steuere den Kreis mit der Maus und weiche den roten Quadraten aus!</div>
+  <canvas id="game" width="700" height="400"></canvas>
+  <script>
+    const canvas = document.getElementById('game');
+    const ctx = canvas.getContext('2d');
+    let player = { x: 350, y: 200, r: 18 };
+    let squares = [];
+    let startTime = null;
+    let gameOver = false;
+    let bestTime = 0;
+
+    function spawnSquare() {
+      // Spawn an edge, random direction
+      let edge = Math.floor(Math.random()*4);
+      let size = 32;
+      let x, y, vx, vy, speed = 2 + Math.random()*2 + squares.length*0.05;
+      if(edge===0) { x=0; y=Math.random()*400; vx=speed; vy=0; }
+      if(edge===1) { x=700; y=Math.random()*400; vx=-speed; vy=0; }
+      if(edge===2) { x=Math.random()*700; y=0; vx=0; vy=speed; }
+      if(edge===3) { x=Math.random()*700; y=400; vx=0; vy=-speed; }
+      squares.push({x,y,vx,vy,size});
+    }
+
+    function resetGame() {
+      player = { x: 350, y: 200, r: 18 };
+      squares = [];
+      startTime = performance.now();
+      gameOver = false;
+      document.getElementById('score').textContent = "Zeit: 0.00s";
+      for(let i=0;i<3;i++) spawnSquare();
+      loop();
+    }
+
+    canvas.addEventListener('mousemove', e => {
+      if(gameOver) return;
+      const rect = canvas.getBoundingClientRect();
+      player.x = e.clientX - rect.left;
+      player.y = e.clientY - rect.top;
+    });
+
+    function draw() {
+      ctx.clearRect(0,0,700,400);
+      // Player
+      ctx.beginPath();
+      ctx.arc(player.x, player.y, player.r, 0, 2*Math.PI);
+      ctx.fillStyle = "#3b82f6";
+      ctx.shadowColor = "#10b981";
+      ctx.shadowBlur = 10;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      // Squares
+      for(let s of squares) {
+        ctx.fillStyle = "#f87171";
+        ctx.fillRect(s.x, s.y, s.size, s.size);
+      }
+    }
+
+    function update() {
+      // Move squares
+      for(let s of squares) {
+        s.x += s.vx;
+        s.y += s.vy;
+      }
+      // Remove offscreen
+      squares = squares.filter(s => s.x>-40 && s.x<740 && s.y>-40 && s.y<440);
+      // Spawn new squares
+      if(Math.random() < 0.012 + squares.length*0.0007) spawnSquare();
+      // Collision
+      for(let s of squares) {
+        let cx = Math.max(s.x, Math.min(player.x, s.x+s.size));
+        let cy = Math.max(s.y, Math.min(player.y, s.y+s.size));
+        let dx = player.x - cx, dy = player.y - cy;
+        if(dx*dx+dy*dy < player.r*player.r) {
+          gameOver = true;
+          let time = ((performance.now()-startTime)/1000).toFixed(2);
+          if(time > bestTime) bestTime = time;
+          ctx.font = "bold 38px Arial";
+          ctx.fillStyle = "#f87171";
+          ctx.textAlign = "center";
+          ctx.fillText("GAME OVER", 350, 200);
+          ctx.font = "20px Arial";
+          ctx.fillStyle = "#23272f";
+          ctx.fillText("Zeit: "+time+"s   |   Bester Versuch: "+bestTime+"s", 350, 240);
+          ctx.fillText("Klicke zum Neustart", 350, 280);
+        }
+      }
+    }
+
+    function loop() {
+      if(gameOver) return;
+      draw();
+      update();
+      let time = ((performance.now()-startTime)/1000).toFixed(2);
+      document.getElementById('score').textContent = "Zeit: "+time+"s";
+      requestAnimationFrame(loop);
+    }
+
+    canvas.addEventListener('mousedown', () => {
+      if(gameOver) resetGame();
+    });
+
+    resetGame();
+  </script>
+</body>
+</html>

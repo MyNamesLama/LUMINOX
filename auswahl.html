@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kachel-Übersicht</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #23272f;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+        .tile {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 140px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
+            text-align: center;
+            text-decoration: none;
+            color: #222;
+            padding: 10px;
+        }
+        .tile:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            background: #e0eaff;
+        }
+        .mc-logo {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center; color: #fff;">Games</h1>
+<div class="grid">
+    <a class="tile" href="MC.html">
+        <img class="mc-logo" src="https://i.ibb.co/Pvxwf1Sq/variations-to-the-minecraft-logo-v0-0dzqovtefeqd1-Photoroom.png" alt="Minecraft Logo">
+        Minecraft
+    </a>
+    <a class="tile" href="1/index.html">FNaF 1</a>
+    <a class="tile" href="2/index.html">FNaF 2</a>
+    <a class="tile" href="3/index.html">FNaF 3</a>
+    <a class="tile" href="4/index.html">FNaF 4</a>
+    <a class="tile" href="ps/index.html">FNaF Pizzeria Simulator</a>
+    <a class="tile" href="ucn/index.html">FNaF Ultimate Custom Night</a>
+    <a class="tile" href="snake.html">Snake</a>
+    <a class="tile" href="Pokemon/game.html">Pokemon</a>
+    <a class="tile" href="dodge.html">Ausweichen</a>
+        <!-- Weitere Kacheln nach Bedarf -->
+    </div>
+</body>
+</html>
