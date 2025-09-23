@@ -140,7 +140,7 @@
       else if (e.key === 'ArrowRight' && direction.x !== -1) direction = {x: 1, y: 0};
       // Start mit erstem Tastendruck
       if (direction.x !== 0 || direction.y !== 0) {
-        if (!gameLoop) gameLoop = setInterval(update, 150);
+        if (!gameLoop) gameLoop = setInterval(update, 200);
       }
     });
 
