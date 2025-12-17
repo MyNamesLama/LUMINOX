@@ -6,6 +6,58 @@
     <!-- Hier kannst du jeden beliebigen Bild-Link als Favicon eintragen -->
     <link rel="icon" type="image/png" href="https://i.ibb.co/cKhPZJgd/favicon.png">
     <style>
+        #password-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#password-box {
+    background: #181c24;
+    padding: 32px;
+    border-radius: 16px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 0 24px #00cfff55;
+}
+
+#password-box h2 {
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #00ff99, #00cfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#password-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 12px;
+    font-size: 1em;
+}
+
+#password-box button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 24px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(90deg, #00ff99, #00cfff);
+    color: #181c24;
+}
+
+#password-error {
+    color: #ff6666;
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+
         body { background: #000; color: #fff; font-family: Arial, sans-serif; }
         .header { background: #181c24; padding: 24px; }
         .logo {
@@ -131,8 +183,43 @@
         }
     </style>
     <script src="videos.js"></script>
+    <script>
+const PAGE_PASSWORD = "luminox123";
+
+// Auto-Login wenn bereits freigeschaltet
+if (localStorage.getItem("luminox_access") === "true") {
+    unlockPage();
+}
+
+function checkPassword() {
+    const input = document.getElementById("password-input").value;
+    if (input === PAGE_PASSWORD) {
+        localStorage.setItem("luminox_access", "true");
+        unlockPage();
+    } else {
+        document.getElementById("password-error").textContent = "❌ Falsches Passwort";
+    }
+}
+
+function unlockPage() {
+    document.getElementById("password-overlay").style.display = "none";
+    document.getElementById("page-content").style.display = "block";
+}
+</script>
+
 </head>
+    
 <body>
+      <div id="password-overlay">
+        <div id="password-box">
+            <h2>🔒 Geschützter Bereich</h2>
+            <input type="password" id="password-input" placeholder="Passwort eingeben">
+            <button onclick="checkPassword()">Zugriff</button>
+            <p id="password-error"></p>
+        </div>
+    </div>
+
+    <div id="page-content" style="display:none;">
     <div class="header">
         <a href="index.html" class="logo">LUMINOX</a>
         <span class="nav">
@@ -300,5 +387,8 @@
             document.getElementById('modal-iframe').src = "";
         }
     </script>
+            </div>
+
 </body>
+
 </html>
