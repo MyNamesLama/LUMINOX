@@ -192,8 +192,15 @@ if (localStorage.getItem("luminox_access") === "true") {
 }
 
 function checkPassword() {
-    const input = document.getElementById("password-input").value;
-    if (input === PAGE_PASSWORD) {
+    const input = document
+        .getElementById("password-input")
+        .value
+        .trim()          // ⬅️ ENTFERNT unsichtbare Leerzeichen
+        .toLowerCase();  // ⬅️ optional, schadet nicht
+
+    const correct = PAGE_PASSWORD.toLowerCase();
+
+    if (input === correct) {
         localStorage.setItem("luminox_access", "true");
         unlockPage();
     } else {
@@ -392,5 +399,6 @@ function unlockPage() {
 </body>
 
 </html>
+
 
 
